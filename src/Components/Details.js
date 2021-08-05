@@ -57,7 +57,8 @@ class Details extends React.Component {
             userName: undefined,
             userContact: undefined,
             userEmail: undefined,
-            userAddress: undefined
+            userAddress: undefined,
+            orderItems: []
         }
     }
 
@@ -91,7 +92,7 @@ class Details extends React.Component {
         }
 
     openModal = () => {
-        this.setState({itemModalIsOpen: true,total:0})
+        this.setState({itemModalIsOpen: true,total:0, orderItems: []})
         const qs = queryString.parse(this.props.location.search);
         const id = qs.restId;
         axios({
@@ -107,7 +108,7 @@ class Details extends React.Component {
     }
 
     closeModal = () => {
-        this.setState({itemModalIsOpen: false, userDetailsModalIsOpen: false})
+        this.setState({itemModalIsOpen: false, userDetailsModalIsOpen: false, orderItems: []})
     }
 
     addItem = (index) => {
@@ -210,7 +211,23 @@ class Details extends React.Component {
 
     payment = () => {
         // primary validations
-        const { userEmail, total } = this.state;
+        const { userEmail, total, userName, restaurant, menuItems } = this.state;
+        var orderItems = menuItems.map((item) => {  
+            return {
+                itemId: item._id,
+                qty: item.qty
+            }
+        })
+        var today = new Date();
+        var orderObj = {
+            placedBy: userName,
+            placedByUserId: userEmail,
+            placedOn: today.getDate(),
+            items: orderItems,
+            amount: total,
+            restaurantId: restaurant._id
+        };
+        sessionStorage.setItem("orderObj", orderObj);
         this.getData({ amount: total, email: userEmail }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
