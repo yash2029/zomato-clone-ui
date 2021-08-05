@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.top-div-home{
+  background-image: linear-gradient(to bottom, rgba(157, 14, 14, 0), #4f0707),url("../Images/1.png");
+  width: 100%;
+  height: 480px;
+}
+
+.create-account-home{
+    display: inline-block;
+    position: absolute;
+    width: 181px;
+    height: 46px;
+    top: 6%;
+    left: 80%;
+    padding-top: 10px;
+    border-radius: 3px;
+    border: solid 1px #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.create-account-home:hover {
+  color: red;
+  border: solid 1px red;
+}
+
+.login-home{
+  position: absolute;
+  top: 7%;
+  left: 73%;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login-home:hover {
+  color: red;
+}
+
+
+.logo-home {
+  position: absolute;
+  top: 12%;
+  left: 47%;
+  height: 147px;
+  width: 147px;
+  border-radius: 50%;
+  background-color: white;
+  font-family: Poppins;
+  font-size: 90px;
+  color: red;
+  text-align: center;
+}
+
+.logout-home {
+  position: absolute;
+  top: 2.5%;
+  left: 92%;
+  width: 80px;
+  height: 46px;
+  padding-top: 10px;
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.logout-home:hover{
+color: red;
+border: solid 1px red;
+}
+
+.top-heading-home {
+  position: absolute;
+  top: 33%;
+  left: 27%;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.location-search{
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  left: 28%;
+  width: 245px; 
+  height: 50px;
+  border-radius: 2px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  color: #636f88;
+}
+
+.restaurant-search{
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  left: 45%;
+  width: 477px;
+  height: 50px;
+  border-radius: 2px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #636f88;
+  background-color: white;
+  padding-top: 10px;
+}
+
+.magGlass{
+  height: 20px; 
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.magGlass:hover{
+  height: 20px; 
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.restaurant-search-text {
+  width: 432px;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  left: 9%;
+  border: white;
+  outline: none;
+}
+
+.quick-searches {
+  margin: 48px 151px 7px 113px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+
+.mid-heading {
+  margin: 7px 59px 33px 113px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c96ab;
+}
+
+.search-type {
+  margin-bottom: 20px;
+  height: 200px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .5);
+  background-color: #ffffff;
+}
+
+.search-type:hover {
+  margin-bottom: 20px;
+  height: 200px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.type-right{
+  vertical-align: middle; 
+  width: 140px; 
+  display: inline-block;
+  text-align: center;
+}
+
+.type-name {
+  display: inline-block;
+  width: 88px;
+  height: 25px;
+  margin: 15px 49px 4px 45px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #192f60;
+}
+
+.type-description {
+  display: inline-block;
+  width: 140px;
+  height: 62px;
+  margin: 11px 0 44px 23px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8c96ab;
+}
+
+.quick-search-image {
+  object-fit: cover;
+}
+
+.suggestion-list{
+  position: absolute;
+  top: 48.6%;
+  left: 48%;
+  width: 500px;
+  height: 400px;
+  z-index: 2;
+}
+
+.suggestion-item {
+  width: 432px;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  font-family: Poppins;
+  text-align: left;
+  border-radius: 3px;
+  border: #636f88 solid 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-home {
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    font-family: Poppins;
+    font-size: 65px;
+    color: red;
+    text-align: center;
+  }
+  .login-home{
+    display: none;
+  }
+  
+  .create-account-home{
+    display: none;
+  }
+
+  .top-heading-home {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .location-search{
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    width: 364px; 
+    height: 50px;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: center;
+    color: #636f88;
+  }
+  
+  .restaurant-search{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 364px;
+    height: 50px;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+    background-color: white;
+    padding-top: 10px;
+  }
+
+  .quick-searches{
+    margin: 35px 199px 14px 30px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+
+  .mid-heading{
+    margin: 14px 133px 25px 30px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+  }
+
+  .type-right{
+    vertical-align: middle; 
+    width: 140px; 
+    display: inline-block;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:972px) {
+
+  .logo-home {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    font-family: Poppins;
+    font-size: 65px;
+    color: red;
+    text-align: center;
+  }
+  
+  .create-account-home{
+    display: inline-block;
+    position: absolute;
+    width: 181px;
+    height: 46px;
+    top: 6%;
+    left: 80%;
+    padding-top: 10px;
+    border-radius: 3px;
+    border: solid 1px #ffffff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.login-home{
+  position: absolute;
+  top: 7%;
+  left: 73%;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+  .top-heading-home {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .location-search{
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    width: 364px; 
+    height: 50px;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: center;
+    color: #636f88;
+  }
+  
+  .restaurant-search{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    width: 364px;
+    height: 50px;
+    border-radius: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+    background-color: white;
+    padding-top: 10px;
+  }
+
+  .quick-searches{
+    margin: 35px 199px 14px 102px;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+
+  .mid-heading{
+    margin: 14px 133px 25px 102px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+  }
+
+  .type-right{
+    vertical-align: middle; 
+    width: 140px; 
+    display: inline-block;
+    text-align: center;
+  }
+
+}
