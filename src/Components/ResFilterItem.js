@@ -39,7 +39,7 @@ class ResFilterItem extends React.Component {
         const restaurantData = this.props.restaurantData;
         return (
             <div className={`content-box${this.props.index+1}`} id={`cb${this.props.index+1}`} onClick={() => this.getRestaurant(restaurantData._id)}>
-                <span><img src="./Images/res.png" className="food-img" alt="error"/></span>
+                <span><img src='./Images/res.png' className="food-img" alt="error"/></span>
                 <span className="restaurant-details">
                     <div className="restaurant-name-filter">{restaurantData.name}</div>
                     <div className="sub-title">{restaurantData.type}</div>
