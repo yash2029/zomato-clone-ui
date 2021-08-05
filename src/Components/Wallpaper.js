@@ -249,7 +249,7 @@ class Wallpaper extends React.Component {
                         <div onClick={this.closeLoginModal} style={{cursor:'pointer', position:'fixed',top:'2%',left:'95%'}}>X</div>
                         <div className='item-list-heading'>Login</div>
                         <GoogleLogin
-                            clientId="997294644856-334nlr0tdbm7cshm1us5hql7d80frnb6.apps.googleusercontent.com"
+                            clientId="852243907649-6iog48fo4896c158bpdase4f6khnrgne.apps.googleusercontent.com"
                             render={renderProps => (
                                 <div onClick={renderProps.onClick} style={googleStyles}>
                                     <span style={{position:'absolute',left:'30%',top:'23%',fontFamily: 'Poppins',fontSize: '18px',textAlign: 'left',color: 'red'}}>Login with Gmail</span>
