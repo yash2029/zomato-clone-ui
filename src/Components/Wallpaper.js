@@ -261,7 +261,7 @@ class Wallpaper extends React.Component {
                             cookiePolicy={'single_host_origin'} />
                         <br/>
                         <FacebookLogin
-                            appId="1035424760606014"
+                            appId="3009291009330705"
                             cssClass='facebook-login'
                             autoLoad={false}
                             fields="name,email,picture"

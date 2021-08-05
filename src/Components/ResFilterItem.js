@@ -63,4 +63,3 @@ class ResFilterItem extends React.Component {
 
 
 export default ResFilterItem;
-//export default connect(null,null,null,{forwardRef: true})(ResFilterItem);
