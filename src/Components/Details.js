@@ -227,7 +227,7 @@ class Details extends React.Component {
             amount: total,
             restaurantId: restaurant._id
         };
-        const order = this.stringifyValue(orderObj);
+        const order = JSON.stringify(orderObj);
         this.getData({ amount: total, email: userEmail, order: order }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
