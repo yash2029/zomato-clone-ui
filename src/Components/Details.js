@@ -160,7 +160,6 @@ class Details extends React.Component {
 
     handleDetailChange = (event,state) => {
         this.setState({[state]: event.target.value});
-        console.log(this.state);
     }
 
     isObj = (val) => {
@@ -222,12 +221,12 @@ class Details extends React.Component {
         var orderObj = {
             placedBy: userName,
             placedByUserId: userEmail,
-            placedOn: today.getDate(),
+            placedOn: today.getUTCDate(),
             items: orderItems,
             amount: total,
             restaurantId: restaurant._id
         };
-        this.getData({ amount: total, email: userEmail, orderObj: orderObj }).then(response => {
+        this.getData({ amount: total, email: userEmail }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
                 params: response
