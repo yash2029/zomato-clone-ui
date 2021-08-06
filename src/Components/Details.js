@@ -218,6 +218,7 @@ class Details extends React.Component {
         })
         orderItems = orderItems.filter((item) => item.qty > 0);
         var today = new Date();
+        
         var orderObj = {
             placedBy: userName,
             placedByUserId: userEmail,
@@ -226,7 +227,8 @@ class Details extends React.Component {
             amount: total,
             restaurantId: restaurant._id
         };
-        this.getData({ amount: total, email: userEmail }).then(response => {
+        const order = this.stringifyValue(orderObj);
+        this.getData({ amount: total, email: userEmail, order: order }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
                 params: response
