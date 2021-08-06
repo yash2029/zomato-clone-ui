@@ -187,7 +187,6 @@ class Details extends React.Component {
             input.setAttribute('value', this.stringifyValue(params[key]));
             form.appendChild(input);
         })
-
         return form;
     }
 
@@ -228,8 +227,7 @@ class Details extends React.Component {
             amount: total,
             restaurantId: restaurant._id
         };
-        localStorage.setItem("orderObj", orderObj);
-        this.getData({ amount: total, email: userEmail }).then(response => {
+        this.getData({ amount: total, email: userEmail, orderObj: orderObj }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
                 params: response
