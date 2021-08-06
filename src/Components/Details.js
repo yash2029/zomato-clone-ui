@@ -227,7 +227,7 @@ class Details extends React.Component {
             amount: total,
             restaurantId: restaurant._id
         };
-        sessionStorage.setItem("orderObj", orderObj);
+        localStorage.setItem("orderObj", orderObj);
         this.getData({ amount: total, email: userEmail }).then(response => {
             var information = {
                 action: "https://securegw-stage.paytm.in/order/process",
