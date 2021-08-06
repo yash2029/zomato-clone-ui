@@ -174,14 +174,14 @@ class Header extends React.Component {
                     }
                 </div>
                 <Modal isOpen={loginModalIsOpen} style={customStyles}>
-                <div style={{height:'300px',width:'450px'}}>
+                    <div style={{height:'500px',width:'450px'}}>
                         <div onClick={this.closeLoginModal} style={{cursor:'pointer', position:'fixed',top:'2%',left:'95%'}}>X</div>
                         <div className='item-list-heading'>Login</div>
                         <GoogleLogin
                             clientId="852243907649-6iog48fo4896c158bpdase4f6khnrgne.apps.googleusercontent.com"
                             render={renderProps => (
                                 <div onClick={renderProps.onClick} style={googleStyles}>
-                                    <span style={{position:'absolute',left:'30%',top:'23%',fontFamily: 'Poppins',fontSize: '18px',textAlign: 'left',color: 'red'}}>Login with Gmail</span>
+                                    <span style={{position:'absolute',left:'30%',top:'30%',fontFamily: 'Poppins',fontSize: '18px',textAlign: 'left',color: 'red'}}>Login with Gmail</span>
                                 </div>
                               )}
                             buttonText="Login"
