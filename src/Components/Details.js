@@ -210,14 +210,15 @@ class Details extends React.Component {
     }
 
     payment = () => {
-        // primary validations
         const { userEmail, total, userName, restaurant, menuItems } = this.state;
-        var orderItems = menuItems.map((item) => {  
+        // primary validations
+        var orderItems = menuItems.map((item) => {
             return {
                 itemId: item._id,
                 qty: item.qty
             }
         })
+        orderItems = orderItems.filter((item) => item.qty > 0);
         var today = new Date();
         var orderObj = {
             placedBy: userName,
