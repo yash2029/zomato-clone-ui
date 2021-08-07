@@ -129,7 +129,7 @@ border: solid 1px #545964;
 
 .facebook-login {
   position: absolute;
-  top: 80%;
+  top: 81%;
   left: 10%;
   width: 398px;
   height: 50px;
@@ -140,6 +140,99 @@ border: solid 1px #545964;
   font-size: 18px;
   text-align: center;
   color: #192f60;
+}
+
+.inputEmail {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.inputPassword {
+  position: absolute;
+  top: 31%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signin-button {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #eb2929;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.signup-link {
+  display: block;
+  position: absolute;
+  top: 57%;
+  left: 28%;
+  cursor: pointer;
+  color: #545964;
+  font-family: Poppins;
+  font-size: large;
+}
+
+.signup-link:hover {
+  color: #eb2929;
+}
+
+.signupName {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signupEmail {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signupPassword {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signupPassword2 {
+  position: absolute;
+  top: 72%;
+  left: 10%;
+  width: 398px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.signup-button {
+  position: absolute;
+  top: 87%;
+  left: 30%;
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #eb2929;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .top-heading {
